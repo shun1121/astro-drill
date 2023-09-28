@@ -1,4 +1,7 @@
 ---
+import Alert from '../components/Alert.astro'
+// import '../css/style.css'
+const color = 'yellow'
 const nav = [
 	{
 		href: 'about',
@@ -13,9 +16,20 @@ const nav = [
 
 <html>
 	<meta charset="UTF-8">
-	<ul>
+	<Alert />
+	<h1 class="alert">aaaaa</h1>
+	<!-- <ul>
 		{nav.map((nav) => (
 			<li><a href={nav.href}>{nav.label}</a></li>
 		))}
-	</ul>
+	</ul> -->
 </html>
+
+<style define:vars={{ color }}>
+	h1 {
+		color: green;
+	}
+	body {
+		color: var(--color);
+	}
+</style>

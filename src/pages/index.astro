@@ -1,35 +1,64 @@
 ---
-import Alert from '../components/Alert.astro'
-// import '../css/style.css'
-const color = 'yellow'
 const nav = [
 	{
-		href: 'about',
+		href: '/',
+		label: 'ホーム'
+	},
+	{
+		href: '/about',
 		label: '会社情報'
 	},
 	{
-		href: 'contact',
+		href: '/contact',
 		label: 'お問い合わせ'
 	},
 ]
+const active = '/'
 ---
 
-<html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
 	<meta charset="UTF-8">
-	<Alert />
-	<h1 class="alert">aaaaa</h1>
-	<!-- <ul>
-		{nav.map((nav) => (
-			<li><a href={nav.href}>{nav.label}</a></li>
-		))}
-	</ul> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ナビゲーション</title>
+</head>
+<body>
+	<h1>ナビゲーション</h1>
+	<nav>
+		<ul>
+			{nav.map((item) => (
+				<li class:list={[(item.href === active && 'is-active')]}><a href={item.href}>{item.label}</a></li>
+			))}
+		</ul>
+	</nav>
+</body>
 </html>
 
-<style define:vars={{ color }}>
-	h1 {
-		color: green;
-	}
-	body {
-		color: var(--color);
+<style lang="scss">
+	nav {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+
+			li {
+				margin-right: 1rem;
+				padding: 5px 3px;
+
+				a {
+					text-decoration: none;
+					color: black;
+				}
+
+				&.is-active {
+					background-color: black;
+					a {
+						color: white;
+					}
+				}
+			}
+		}
 	}
 </style>

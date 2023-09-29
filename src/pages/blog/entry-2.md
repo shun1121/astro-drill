@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: javascript
+title: astro
 ---
 
-javascriptの話題です。
+astroの話題です。

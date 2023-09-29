@@ -3,4 +3,4 @@ layout: ../../layouts/MarkdownLayout.astro
 title: javascript
 ---
 
-javascriptの話題です。
+javascript2の話題です。

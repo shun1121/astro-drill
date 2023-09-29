@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
-title: astro
+title: astroooooooooo
+tags: astro
 ---
 
 astroの話題です。

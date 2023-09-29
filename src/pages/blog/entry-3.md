@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
-title: html
+title: htmluuuuuuuuu
+tags: html
 ---
 
 htmlの話題です。

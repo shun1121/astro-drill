@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
-title: javascript
+title: javascriptoooooooo
+tags: javascript
 ---
 
 javascriptの話題です。
